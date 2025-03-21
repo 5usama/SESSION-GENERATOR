@@ -5,6 +5,7 @@ function makeid(num = 4) {
   for (var i = 0; i < num; i++) {
     result += characters.charAt(Math.floor(Math.random() * characters9));
   }
-  return result;
+  return "usama-md~" + result; // Prefix added
 }
-module.exports = {makeid};
+
+module.exports = { makeid };
